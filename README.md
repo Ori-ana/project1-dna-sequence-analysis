@@ -23,7 +23,7 @@ Validated reads (in addition to labelled invalid reads), nucelotide mismatches (
 In order for the code to be manageable and easily readable, the colab notebook, (and hence this project) divides into 5 steps, each referring to a relatively different functions. The steps increase in complexity subsequently, and functions from earlier steps were  used to shortern code in future, hence avoiding repetition. Similarly, various comments were used to separte and describe different code blocks.
 Functions included: 'validate_read()' which returns validity status of a sequence, 'ranked_positions()', a helper function which sorted mismatch frequency at various postions of nucleotides.
 Dictionaries (i.e sample_results[sample]) were chosen to store read information about the samples including  mismatch counts, these were chosen instead of lists as keys prove to be more informative and organised.
-I ensured various error handling was incorporated,for example , invalid reads  were labelled, and excluded from certain calculations. Try/except Zero division erros was also used to prevent division by 0 when sample had no valid reads- as a result 'None; would be returned.
+I ensured various error handling was incorporated,for example , invalid reads  were labelled, and excluded from certain calculations. Try/except Zero division erros was also used to prevent division by 0 when sample had no valid reads- as a result 'None; would be returned. Another important mode of handling errors was in step 5 where conditional stamements had to be used to handle statistical comparisons which could not be calculated- which otherwise would cause a crash.
 
 
 ##*Testing*
